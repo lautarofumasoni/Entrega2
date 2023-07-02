@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 body {
   background-color: #ffc8dd;
@@ -11,10 +13,12 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 20px;
+  font-size: 28px;
   font-family: "Oswald";
   background-color: #cdb4db;
   padding: 1rem;
+  position: fixed;
+  width: 100%;
 }
 
 ul a {
@@ -27,5 +31,56 @@ ul {
   display: flex;
   gap: 15px;
 }
+/* ===========FUENTES=========  */
 
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+/*===============HERO============== */
+
+main {
+  background: violet;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: white;
+}
+
+#hero {
+  max-width: 1200px;
+  margin-top: 54px;
+  padding: 110px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  width: 70%;
+}
+
+.hero-info h1 {
+  font-size: 50px;
+  font-weight: 600;
+  width: 60%;
+  min-width: 500;
+}
+
+.hero-info p {
+  font-size: 24px;
+  width: 100%;
+  min-width: 100%;
+}
+
+.hero-info a {
+  font-size: 20px;
+  width: 16%;
+  padding: 10px;
+  border-radius: 20px;
+  color: blanchedalmond;
+  background-color: purple;
+  text-transform: uppercase;
+}
