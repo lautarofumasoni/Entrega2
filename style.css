@@ -13,10 +13,10 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 28px;
+  font-size: 30px;
   font-family: "Oswald";
   background-color: #cdb4db;
-  padding: 1rem;
+  padding: 2rem;
   position: fixed;
   width: 100%;
 }
@@ -31,7 +31,6 @@ ul {
   display: flex;
   gap: 15px;
 }
-/* ===========FUENTES=========  */
 
 /*===============HERO============== */
 
@@ -47,8 +46,8 @@ main {
 
 #hero {
   max-width: 1200px;
-  margin-top: 54px;
-  padding: 110px 0;
+  margin-top: 104px;
+  padding: 150px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,7 +69,7 @@ main {
 }
 
 .hero-info p {
-  font-size: 24px;
+  font-size: 30px;
   width: 100%;
   min-width: 100%;
 }
@@ -83,4 +82,18 @@ main {
   color: blanchedalmond;
   background-color: purple;
   text-transform: uppercase;
+}
+
+.informacion {
+  display: flex;
+  font-size: 30px;
+  width: 40%;
+  justify-content: center;
+  align-items: baseline;
+  padding: 50px 0;
+  font-weight: 50;
+  flex-direction: column;
+  gap: 50%;
+  min-width: 500px;
+  font-family: Ubuntu;
 }
