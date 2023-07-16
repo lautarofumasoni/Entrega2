@@ -8,7 +8,14 @@
 body {
   background-color: #ffc8dd;
 }
-
+.portada{
+  box-sizing: border-box;
+  border-radius: 20px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
 nav {
   display: flex;
   justify-content: space-around;
@@ -62,16 +69,17 @@ main {
 }
 
 .hero-info h1 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 600;
   width: 60%;
   min-width: 500;
+  font-family: Oswald;
 }
 
 .hero-info p {
-  font-size: 30px;
-  width: 100%;
-  min-width: 100%;
+  font-size: 25px;
+  width: 80%;
+  min-width: 60%;
 }
 
 .hero-info a {
@@ -86,46 +94,97 @@ main {
 
 .informacion {
   display: flex;
-  font-size: 30px;
-  width: 40%;
+  font-size: 23px;
+  width: 80%;
   justify-content: center;
   align-items: baseline;
-  padding: 50px 0;
+  padding: 10px 0;
   font-weight: 50;
   flex-direction: column;
-  gap: 50%;
+  gap: 40px;
   min-width: 400px;
   font-family: Ubuntu;
 }
 
-.cards{
+
+
+.container{
+  box-sizing: border-box;
   display: flex;
-  justify-content: flex-start;
-  align-items:flex-start;
-  flex-direction: column;
-  gap: 20px;
-  padding: 1px;
+  flex-direction: row;
+  gap: 15%;
+  padding: 100px;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  
+}
+
+.cards{
+  width: 300px 200;
+  height: 430px;
+ align-items: flex-start;
+ box-sizing: border-box;
+ background-color: #ee9ca7;
+ border-radius: 20px;
+ font-size: 15px;
+ padding: 10px;
+ align-self: center;
+ align-content: center;
 }
 .img_card{
-  width: 100px;
+  width: 80px;
+  justify-content: center;
+  gap: 20px;
+  padding: 3px;
+  align-items: center;
+  margin: 1.5rem;
+
 }
 
-.texto{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 100px;
-}
 
 .cards2{
-  display: flex;
-  justify-content: center;
+  width: 300px;
+  background-color: #ee9ca7;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 20px;
   align-items: center;
-  flex-direction: column;
-  padding: 5px;
-  gap: 20px;
 }
 .img_card2{
-  width: 100px;
+  width:70px;
+  align-items: center;
+  gap: 20%;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem;
+  }
+
+  .cards3{
+    background-color: #ee9ca7;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 20px;
 }
+
+  .img_card3{
+    width: 70px;
+    margin: 1.5rem;
+    
+  }
+
+  .h3{
+    font-size: 25px;
+   margin: 1rem;
+   font-family: ubuntu;
+  }
+
+  .p{
+    width: 210px;
+    font-size: 13px;
+    padding: 10px;
+    margin: 5%;
+    font-family: Glegoo;
+   
+  }
