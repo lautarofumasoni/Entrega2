@@ -8,7 +8,7 @@
 body {
   background-color: #ffc8dd;
 }
-.portada{
+.portada {
   box-sizing: border-box;
   border-radius: 20px;
   -webkit-border-radius: 30px;
@@ -23,8 +23,8 @@ nav {
   font-size: 30px;
   font-family: "Oswald";
   background-color: #cdb4db;
-  padding: .1rem;
-  position: fixed;
+  padding: 0.1rem;
+  /* position: fixed; */
   width: 100%;
 }
 
@@ -42,7 +42,7 @@ ul {
 /*===============HERO============== */
 
 main {
-  background: violet;
+  background: #9656a1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,7 +53,7 @@ main {
 
 #hero {
   max-width: 1200px;
-  margin-top: 100px;
+  margin-top: 50px;
   padding: 150px 0;
   display: flex;
   justify-content: center;
@@ -95,20 +95,18 @@ main {
 .informacion {
   display: flex;
   font-size: 23px;
-  width: 80%;
+  width: 75%;
   justify-content: center;
   align-items: baseline;
-  padding: 10px 0;
-  font-weight: 50;
+  padding: 5px 30px;
+  font-weight: 20px;
   flex-direction: column;
-  gap: 40px;
+  gap: 10px;
   min-width: 400px;
   font-family: Ubuntu;
 }
 
-
-
-.container{
+.container {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -117,33 +115,30 @@ main {
   justify-content: center;
   align-content: center;
   text-align: center;
-  
 }
 
-.cards{
+.cards {
   width: 300px 200;
   height: 430px;
- align-items: flex-start;
- box-sizing: border-box;
- background-color: #ee9ca7;
- border-radius: 20px;
- font-size: 15px;
- padding: 10px;
- align-self: center;
- align-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+  background-color: #ee9ca7;
+  border-radius: 20px;
+  font-size: 15px;
+  padding: 10px;
+  align-self: center;
+  align-content: center;
 }
-.img_card{
+.img_card {
   width: 80px;
   justify-content: center;
   gap: 20px;
   padding: 3px;
   align-items: center;
   margin: 1.5rem;
-
 }
 
-
-.cards2{
+.cards2 {
   width: 300px;
   background-color: #ee9ca7;
   box-sizing: border-box;
@@ -151,40 +146,146 @@ main {
   padding: 20px;
   align-items: center;
 }
-.img_card2{
-  width:70px;
+.img_card2 {
+  width: 70px;
   align-items: center;
   gap: 20%;
   align-self: center;
   align-items: center;
   text-align: center;
   margin: 1rem;
-  }
-
-  .cards3{
-    background-color: #ee9ca7;
-    box-sizing: border-box;
-    border-radius: 20px;
-    padding: 20px;
 }
 
-  .img_card3{
-    width: 70px;
-    margin: 1.5rem;
-    
+.cards3 {
+  background-color: #ee9ca7;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.img_card3 {
+  width: 70px;
+  margin: 1.5rem;
+}
+
+.h3 {
+  font-size: 25px;
+  margin: 1rem;
+  font-family: ubuntu;
+}
+
+.p {
+  width: 210px;
+  font-size: 14.5px;
+  padding: 10px;
+  margin: 13%;
+  font-family: Glegoo;
+}
+
+#contacto {
+  display: flex;
+  padding: 50px 100px;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.colorbg {
+  background-color: #ee9ca7;
+}
+
+.info-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+.info-contacto h2 {
+  font-size: 25px;
+  font-family: Ubuntu;
+}
+
+.container-info {
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.info-column h3 {
+  font-size: 20px;
+  font-family: Ubuntu;
+}
+
+.info-column p,
+.info-column a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-family: Ubuntu;
+}
+.info-column a {
+  text-decoration: none;
+  color: white;
+}
+
+.info-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+iframe {
+  height: 300px;
+  width: 500px;
+}
+
+footer {
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 18px;
+}
+
+/* -------ICONOS REDES-------- */
+
+.icono {
+  width: 28px;
+}
+
+/* ------ANIMACION----- */
+
+@keyframes moverlo {
+  0% {
+    transform: translateX(150px);
   }
 
-  .h3{
-    font-size: 25px;
-   margin: 1rem;
-   font-family: ubuntu;
+  100% {
+    transform: translateX(0px);
   }
+}
 
-  .p{
-    width: 210px;
-    font-size: 13px;
-    padding: 10px;
-    margin: 5%;
-    font-family: Glegoo;
-   
+.hero-info h1,
+.hero-info,
+p .hero-info a {
+  animation: moverlo 5s;
+  animation-iteration-count: 4;
+}
+
+@keyframes aparece {
+  0% {
+    transform: translateY(100px);
   }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.cards,
+.cards2,
+.cards3 {
+  animation: aparece 5s;
+  animation-iteration-count: 4;
+}
